@@ -1,31 +1,19 @@
-frenchfiesta/
-├── public/
-│   ├── index.html
-│   └── assets/
-│       ├── logo.png
-│       └── beginner-animation.mp4
-├── src/
-│   ├── App.jsx
-│   ├── App.css
-│   ├── components/
-│   │   ├── Auth.jsx
-│   │   ├── auth.css
-│   │   ├── Onboarding.jsx
-│   │   ├── onboarding.css
-│   │   ├── Dashboard.jsx
-│   │   └── dashboard.css
-│   ├── controllers/
-│   │   ├── AuthController.js
-│   │   ├── OnboardingController.js
-│   │   └── DashboardController.js
-│   ├── models/t
-│   │   ├── UserModel.js
-│   │   └── LessonModel.jsx
-│   ├── firebase.js
-│   └── main.jsx
-├── functions/
-│   ├── index.js
-│   └── package.json
-├── package.json
-├── vite.config.js
-└── firebase.json i want it to be like this ok
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "functions": {
+    "source": "functions"
+  }
+}

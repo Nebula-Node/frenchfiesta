@@ -1,0 +1,31 @@
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.auth-button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.auth-button:hover {
+  background-color: #1976D2;
+}
+
+@media (max-width: 600px) {
+  .auth-container {
+    padding: 10px;
+  }
+
+  .auth-button {
+    width: 100%;
+  }
+}

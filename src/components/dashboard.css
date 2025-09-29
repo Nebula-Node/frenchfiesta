@@ -1,0 +1,49 @@
+.dashboard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.progress-section, .streak-section, .progress-chart, .lesson-section {
+  margin: 20px 0;
+}
+
+.progress-bar-container {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 20px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  background-color: #4CAF50;
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.complete-button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.complete-button:hover {
+  background-color: #1976D2;
+}
+
+@media (max-width: 600px) {
+  .dashboard {
+    padding: 10px;
+  }
+
+  .complete-button {
+    width: 100%;
+  }
+}
